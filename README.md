@@ -13,7 +13,7 @@ Kelas   : TI.22.A.4
     CREATE DATABASE nama_database;
     ```
     contoh:     
-    ![img](gambar/create%20latihan2.png)
+    ![img](Gambar/create%20latihan2.png)
 2. Buat sebuah tabel dengan nama **biodata** (nama, alamat) di dalam database **latihan1!**     
     Note:
     "Sebelum membuat sebuah tabel, pastikan anda sudah menggunakan sebuah database dengan perintah
@@ -21,7 +21,7 @@ Kelas   : TI.22.A.4
     USE nama_database;
     ```
     contoh:     
-    ![img](gambar/USE.png)
+    ![img](Gambar/USE.png)
     dibawah ini adalah perintah untuk membuat sebuah tabel:
     ```sql
     CREATE TABLE nama_tabel (
@@ -31,27 +31,27 @@ Kelas   : TI.22.A.4
         );
     ```
     contoh:     
-    ![img](gambar/CREATE%20TABLE%20biodata.png)
+    ![img](Gambar/CREATE%20TABLE%20biodata.png)
 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!  
     Tidak ada tambahan query apapun karna jika memasukan query menambahkan kolom seperti biasa otomatis posisi kolom tersebut akan berada dipaling akhir. Berikut ini adalah query untuk menambahkan sebuah kolom pada kolom terakhir
     ```sql
     ALTER TABLE nama_tabel ADD COLUMN nama_field tipe_data(ukuran);
     ```
-    ![img](gambar/add%20keterangan.png)
+    ![img](Gambar/add%20keterangan.png)
 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
     Ada sedikit tambahan query pada saat ingin meletakan kolom baru di awal yakni dengan menambahkan FIRST, berikut adalah querynya:
     ```sql
     ALTER TABLE nama_tabel ADD COLUMN nama_field tipe_data FIRST;
     ```
     contoh:     
-    ![img](gambar/add%20id.png)
+    ![img](Gambar/add%20id.png)
 5. Sisipkan sebuah kolom dengan nama **phone** (varchar 15) setelah kolom **alamat**!       
     Jika ingin menambahkan sebuah kolom di antara kolom lain seperti sesudah dan sebelum kolom yang ingin diletakan, maka gunakan query tambahan yakni AFTER. Berikut adalah querynya,
     ```sql
     ALTER TABLE nama_tabel ADD COLUMN nama_field tipe_data(ukuran) AFTER nama_field_tujuan;
     ```
     contoh:     
-    ![img](gambar/add%20phone.png)
+    ![img](Gambar/add%20phone.png)
 6. Ubah tipe data kolom id menjadi char(11)     
     Untuk mengubah tipe data pada kolom maka gunakan perintah sebagai berikut:
     ```sql
@@ -62,7 +62,7 @@ Kelas   : TI.22.A.4
     ALTER TABLE nama_tabel MODIFY id nama_field tipe_data_baru(ukuran);
     ```
     contoh:     
-    ![img](gambar/MODIFY%20id.png)
+    ![img](Gambar/MODIFY%20id.png)
 7. Ubah nama kolom **phone** menjadi **hp** (varchar 20)!       
     Untuk mengubah kolom pada sebuah tabel gunakan query sebagai berikut:
     ```sql
@@ -73,7 +73,7 @@ Kelas   : TI.22.A.4
     ALTER TABLE nama_tabel CHANGE nama_field_lama nama_field_baru tipe_data_lama(ukuran);
     ```
     contoh:     
-    ![img](gambar/MODIFY%20phone%20to%20hp.png)
+    ![img](Gambar/MODIFY%20phone%20to%20hp.png)
 8. Tambahkan kolom **email** setelah kolom **hp**       
     Untuk Menambahkan kolom pada sebuah kolom setelah kolom yang ditentukan maka gunakan perintah **AFTER** berikut adalah querynya:
     ```sql
@@ -84,7 +84,7 @@ Kelas   : TI.22.A.4
     ALTER TABLE nama_tabel ADD nama_field AFTER nama_field_tujuan;
     ```
     contoh:     
-    ![img](gambar/add%20email.png)
+    ![img](Gambar/add%20email.png)
 9. Hapus kolom **keterangan** dari tabel!
     Untuk menghapus kolom pada sebuah kolom yang ditentukan maka gunakan perintah berikut adalah querynya:
     ```sql
@@ -95,14 +95,14 @@ Kelas   : TI.22.A.4
     ALTER TABLE nama_tabel DROP nama_field;
     ```
     contoh:     
-    ![img](gambar/DROP%20keterangan.png)
+    ![img](Gambar/DROP%20keterangan.png)
 10. Ganti nama tabel menjadi **data_mahasiswa**!        
     Untuk menganti nama pada subah tabel maka gunakan perintah berikut adalah querynya:
     ```sql
     ALTER TABLE nama_tabel RENAME nama_tabel_baru;
     ```
     contoh:     
-    ![img](gambar/RENAME%20TABLE%20biodata.png)
+    ![img](Gambar/RENAME%20TABLE%20biodata.png)
 11. Ganti nama **field** id menjadi **nim**!        
     Untuk mengganti nama field/kolom maka gunakan perintah berikut adalah querynya:
     ```sql
@@ -114,21 +114,21 @@ Kelas   : TI.22.A.4
     ALTER TABLE nama_tabel CHANGE nama_field_baru tipe_data_lama(ukuran);
     ```
     contoh:     
-    ![img](gambar/CHANGE%20id%20.png)
+    ![img](Gambar/CHANGE%20id%20.png)
 12. Jadikan **nim** sebagai **PRIMARY KEY**!        
     Untuk Menjadikan **PRIMARY KEY** pada sebuah kolom maka gunakan perintah berikut adalah querynya:
     ```sql
     ALTER TABLE nama_tabel ADD PRIMARY KEY(nama_field);
     ```
     contoh:     
-    ![img](gambar/PRIMARY%20KEY.png)
+    ![img](Gambar/PRIMARY%20KEY.png)
 13. Jadikan kolom **email** sebagai **UNIQUE KEY**      
     Untuk menjadikan **UNIQUE KEY** pada sebuah kolom maka gunakan perintah berikut adalah querynya:
     ```sql
     ALTER TABLE nama_tabel ADD UNIQUE KEY(nama_field);
     ```
     contoh:     
-    ![img](gambar/UNIQUE%20KEY.png)
+    ![img](Gambar/UNIQUE%20KEY.png)
 
 ### **Evaluasi dan Pertanyaan**
 
