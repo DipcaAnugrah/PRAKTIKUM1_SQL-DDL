@@ -7,8 +7,8 @@ Kelas   : TI.22.A.4
 ```
 # **SQL DDL (Data Definiton Language)**
 # **Daftar Isi**
-[A. TUGAS PRAKTIKUM 1](#tugas-praktikum_1)             
-[B. Evalulasi dan Pertanyaan](#evaluasi-dan-pertanyaan)
+[A. TUGAS PRAKTIKUM 1](#a-tugas-praktikum-1)             
+[B. Evalulasi dan Pertanyaan](#b-evaluasi-dan-pertanyaan)
 
 ## **A. TUGAS PRAKTIKUM 1**
 
